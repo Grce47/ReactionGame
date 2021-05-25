@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning JS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        #circle{
+            height: 500px;
+            width: 500px;
+            border-radius: 50%;
+            background-color: red;
+        }
+        #box{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 0%;
+            display: none;
+        }
+    </style>    
+</head>
+
+<body>
+    <h1>Test Your Reaction!!</h1>  
+    <form name="difficul">
+        <input type="checkbox" name="theBox">Fast</input>
+        <input type="button" value="Update Speed" onclick="validate()" />
+    </form>
+    <p>Your Reaction time is <span id="result" class="bold">_____</span> secs.</p>
+    <div id="box"></div>
+    
+    <script type="text/javascript" src="ReactionGame_scripts.js">
+    </script>
+</body>
+</html>
